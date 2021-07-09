@@ -1,0 +1,19 @@
+//- Utils
+@import 'vars';
+@import 'mixins';
+
+//- Base
+@import 'base/normalize.scss';
+@import 'base/fonts.scss';
+
+body {
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    box-sizing: border-box;
+}
