@@ -17,30 +17,28 @@ const Header = () => {
                     <div className={s.logo}>
                         <Logo />
                     </div>
-                    <div className={s.nav}>
-                        <nav>
-                            <Link href="/">
-                                <a>
-                                    <span>Пляжи</span>
-                                </a>
-                            </Link>
-                            <Link href="/">
-                                <a>
-                                    <span>Breezzor pass</span>
-                                </a>
-                            </Link>
-                            <Link href="/">
-                                <a>
-                                    <span>Впечатления</span>
-                                </a>
-                            </Link>
-                            <Link href="/">
-                                <a>
-                                    <span>Маршруты</span>
-                                </a>
-                            </Link>
-                        </nav>
-                    </div>
+                    <nav className={s.nav}>
+                        <Link href="/">
+                            <a>
+                                <span>Пляжи</span>
+                            </a>
+                        </Link>
+                        <Link href="/">
+                            <a>
+                                <span>Breezzor pass</span>
+                            </a>
+                        </Link>
+                        <Link href="/">
+                            <a>
+                                <span>Впечатления</span>
+                            </a>
+                        </Link>
+                        <Link href="/">
+                            <a>
+                                <span>Маршруты</span>
+                            </a>
+                        </Link>
+                    </nav>
                     <div className={s.search}>
                         <button>
                             <Search />

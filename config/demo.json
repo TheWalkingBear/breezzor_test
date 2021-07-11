@@ -1,5 +1,5 @@
 {
-    "title": "Урок сыроедения",
+    "title": "Урок сыроделия",
     "breadcrumbs": [
         {
             "name": "Франция",
@@ -84,5 +84,63 @@
         "languages": "✓ Английский ✓ Французкий",
         "free_cancellation": true,
         "cost": 1372
+    },
+    "recommendations": {
+        "description": "<p>Всего символов: 321 Без пробелов: 272 Количество слов: 50 Quis exercitation deserunt aliquip Lorem non velit id ad incididunt eu. Eu labore eiusmod duis ad cupidatat occaecat dolor anim eiusmod fugiat labore sunt eu. Officia mollit eu officia excepteur aute nostrud aliquip. Deserunt ullamco irure esse eu labore consequat.</p>",
+        "tours": [
+            {
+                "id": 1,
+                "category_name": "Отдых",
+                "category_slug": "otdyh",
+                "items": [
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"},
+                    {"id": 2, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/2.jpg"},
+                    {"id": 3, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/3.jpg"}
+                ]
+            },
+            {
+                "id": 2,
+                "category_name": "Развлечения",
+                "category_slug": "razvlecheniya",
+                "items": [
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"},
+                    {"id": 2, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/2.jpg"},
+                    {"id": 3, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/3.jpg"}
+                ]
+            },
+            {
+                "id": 3,
+                "category_name": "Кулинарные",
+                "category_slug": "kulinarnye",
+                "items": [
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"},
+                    {"id": 2, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/2.jpg"},
+                    {"id": 3, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/3.jpg"}
+                ]
+            },
+            {
+                "id": 4,
+                "category_name": "Культурные",
+                "category_slug": "kulturnye",
+                "items": [
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"},
+                    {"id": 2, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/2.jpg"},
+                    {"id": 3, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/3.jpg"},
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"}
+                ]
+            },
+            {
+                "id": 5,
+                "category_name": "Кулинарные",
+                "category_slug": "aktivnye",
+                "items": [
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"},
+                    {"id": 2, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/2.jpg"},
+                    {"id": 3, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/3.jpg"},
+                    {"id": 1, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/1.jpg"},
+                    {"id": 2, "name": "Your Experience", "location": "Country, Region", "cost": "$ 100 / hour", "diration": "Duration: from 60 min", "short_description": "Training and Riding Horses and Ponies", "slug": "", "rating": "4.6", "best_offer": true, "image": "/images/tours/2.jpg"}
+                ]
+            }
+        ]
     }
 }

@@ -6,14 +6,14 @@ const Button = ({href, onClick, children}) => {
     if(href) {
         return (
             <Link href={href}>
-                <a className={s.button}>
+                <a className={s.container}>
                     <span>{children}</span>
                 </a>
             </Link>
         )
     } else {
         return (
-            <button className={s.button} onClick={() => onClick && onClick()}>
+            <button className={s.container} onClick={() => onClick && onClick()}>
                 <span>{children}</span>
             </button>
         )

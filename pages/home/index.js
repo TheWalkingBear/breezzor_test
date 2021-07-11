@@ -11,6 +11,8 @@ import Info from '../../components/pages/tour/Info/Info';
 import Place from '../../components/pages/tour/Place/Place';
 import ReviewItem from '../../components/shared/ReviewItem/ReviewItem';
 import Event from '../../components/pages/tour/Event/Event';
+import Recommendations from '../../components/pages/tour/Recommendations/Recommendations';
+
 import s from './Home.module.scss';
 
 import { Like, ArrowRight } from '../../components/shared/Icons/Icons';
@@ -50,6 +52,7 @@ const Home = (props) => {
                     </div>
                 </div>
                 <Event data={data.event} />
+                <Recommendations data={data.recommendations} />
             </div>
         </Layout>
     );

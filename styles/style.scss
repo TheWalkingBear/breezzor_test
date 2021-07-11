@@ -7,13 +7,19 @@
 @import 'base/fonts.scss';
 
 body {
+    background-color: $lightGray;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray;
     &.fixed {
         overflow: hidden;
     }
 }
 
 .container {
-    width: 1400px;
+    width: 1120px;
     margin: auto;
     box-sizing: border-box;
 }

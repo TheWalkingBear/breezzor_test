@@ -31,27 +31,27 @@ const PageHeading = ({data}) => {
                 <div className={s.title}>
                     <h1>{title}</h1>
                 </div>
-                <Affix offsetTop={98}>
-                    <div className={s.tabs}>
-                        <button>
-                            <Binoculars />
-                            <span>Обзор</span>
-                        </button>
-                        <button>
-                            <Account />
-                            <span>Организатор</span>
-                        </button>
-                        <button>
-                            <Warning />
-                            <span>Информация</span>
-                        </button>
-                        <button>
-                            <Calendar />
-                            <span>Выбрать даты</span>
-                        </button>
-                    </div>
-                </Affix>
             </div>
+            <Affix offsetTop={98}>
+                <div className={s.tabs}>
+                    <button>
+                        <Binoculars className={s.overview} />
+                        <span>Обзор</span>
+                    </button>
+                    <button>
+                        <Account className={s.organizer} />
+                        <span>Организатор</span>
+                    </button>
+                    <button>
+                        <Warning className={s.info} />
+                        <span>Информация</span>
+                    </button>
+                    <button>
+                        <Calendar className={s.date} />
+                        <span>Выбрать даты</span>
+                    </button>
+                </div>
+            </Affix>
         </div>
     )
 }

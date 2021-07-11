@@ -1,8 +1,69 @@
 @import 'styles/vars';
 @import 'styles/mixins';
 
-.header {
+.container {
+    display: flex;
     height: 98px;
     width: 100%;
-    background-color: #0053D9;
+    background-color: $blue;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    :global(.container) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.logo {
+    width: 183px;
+    margin-right: 27px;
+    svg {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $white;
+        text-decoration: none;
+        margin-right: 24px;
+    }
+}
+.search {
+    margin-left: auto;
+    margin-right: 22px;
+    button {
+        display: flex;
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 0;
+        outline: none;
+        border: none;
+        &:hover {
+            svg {
+                fill: $white;
+            }
+        }
+        svg {
+            display: block;
+            height: auto;
+            width: 20px;
+            fill: $gray;
+            transition: fill 0.2s ease;
+        }
+    }
+}
+.action {
+
 }

@@ -1,0 +1,128 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.container {
+    background-color: $white;
+    padding-top: 45px;
+    margin-bottom: 45px;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+.heading__actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    button {
+        display: flex;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        color: $black;
+        white-space: nowrap;
+        align-items: center;
+        padding: 0;
+        outline: none;
+        border: none;
+        transition: color 0.2s ease;
+        &:hover {
+            color: $blue;
+            svg {
+                fill: $blue;
+            }
+        }
+        svg {
+            display: block;
+            height: auto;
+            fill: $black;
+            transition: fill 0.2s ease;
+        }
+    }
+}
+.heading__actions__share {
+    margin-right: 16px;
+    svg {
+        width: 16px;
+        margin-top: -1px;
+        margin-right: 4px;
+    }
+}
+.heading__actions__favorite {
+    svg {
+        width: 15px;
+        margin-top: -2px;
+        margin-right: 6px;
+    }
+}
+.title {
+    margin-top: 64px;
+    margin-bottom: 21px;
+    &>* {
+        font-weight: 500;
+        font-family: $font2;
+        font-size: 32px;
+        line-height: 48px;
+        color: $black;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+}
+.tabs {
+    display: flex;
+    background-color: $white;
+    justify-content: center;
+    padding: 24px 0;
+    box-shadow: 0px 20px 30px -20px rgba(31, 31, 31, 0.1);
+    button {
+        display: inline-flex;
+        height: 32px;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        white-space: nowrap;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 12px;
+        outline: none;
+        border: 0;
+        transition: color 0.2s ease;
+        &.active {
+            color: $blue;
+            svg {
+                fill: $blue;
+            }
+        }
+        &:hover {
+            color: $blue;
+            svg {
+                fill: $blue;
+            }
+        }
+        &:not(:last-child) {
+            border-right: 1px solid #D9D9D9;
+        }
+        svg {
+            display: block;
+            height: auto;
+            fill: $gray;
+            margin-right: 8px;
+            transition: fill 0.2s ease;
+            &.overview {
+                width: 28px;
+            }
+            &.organizer {
+                width: 20px;
+            }
+            &.info {
+                width: 28px;
+            }
+            &.date {
+                width: 28px;
+            }
+        }
+    }
+}
