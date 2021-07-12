@@ -3,11 +3,11 @@ import Link from "next/link";
 import cn from 'classnames';
 import s from './Tabs.module.scss';
 
-const Tabs = ({data, onClick}) => {
+const Tabs = ({data, activeSlug, onClick}) => {
     return (
         <div className={s.container}>
             {data.map((item) => (
-                <button className={s.tab} key={item.id} onClick={() => onClick ? onClick(item.slug) : false}>
+                <button className={cn(s.tab, activeSlug === item.slug && s.active)} onClick={() => onClick ? onClick(item.slug) : false} key={item.id}>
                     <span>{item.name}</span>
                 </button>
             ))}

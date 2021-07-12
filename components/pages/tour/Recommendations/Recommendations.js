@@ -14,6 +14,8 @@ const Recommendations = ({data}) => {
     const [tabs, setTabs] = useState([]);
     const [toursList, setToursList] = useState([]);
 
+    const [activeSlug, setActiveSlug] = useState(null);
+
     useEffect(() => {
         let tabsArr = [];
         tours.map((item, index) => {
@@ -22,6 +24,7 @@ const Recommendations = ({data}) => {
             }
         });
         setTabs(tabsArr);
+        setActiveSlug(tabsArr[0].slug)
 
         let toursArr = [];
         tours.map((item) => {
@@ -29,6 +32,7 @@ const Recommendations = ({data}) => {
                 toursArr.push(tour);
             });
         });
+        console.log(toursArr);
         setToursList(toursArr);
     }, [tours]);
 
@@ -45,7 +49,7 @@ const Recommendations = ({data}) => {
                 <div className={s.description} dangerouslySetInnerHTML={{ __html: description }} />
                 <div className={s.content}>
                     <div className={s.content__tabs}>
-                        <Tabs data={tabs} onClick={(slug) => tabsSwitchHandler(slug)}/>
+                        <Tabs data={tabs} activeSlug={activeSlug} onClick={(slug) => tabsSwitchHandler(slug)}/>
                     </div>
                     {toursList.length > 0 && <div className={s.content__cards}>
                         <Swiper

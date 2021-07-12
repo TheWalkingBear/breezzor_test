@@ -2,9 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import '../styles/style.scss';
 import 'swiper/swiper.scss';
-import 'antd/lib/image/style/index.css';
-import 'antd/lib/affix/style/index.css';
-// import 'antd/dist/antd.css';
+import 'antd/dist/antd.css';
 
 import 'moment/locale/ru';
 

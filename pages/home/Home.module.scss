@@ -1,3 +1,82 @@
-.tourPage {
-    
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.tourPage__review {
+    margin-top: 45px;
+    :global(.container) {
+        padding-top: 67px;
+        padding-bottom: 42px;
+        border-top: 1px solid #8C8C8C;
+        border-bottom: 1px solid #8C8C8C;
+        box-sizing: border-box;
+    }
+}
+.tourPage__review__heading {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tourPage__review__heading__title {
+    font-weight: 400;
+    font-family: $font;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: $black;
+}
+.tourPage__review__heading__link {
+    font-weight: 500;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    margin-top: 6px;
+    margin-left: auto;
+    a {
+        display: flex;
+        color: $black;
+        align-items: center;
+        transition: color 0.2s ease;
+        &:hover {
+            color: $blue;
+            .tourPage__review__heading__link__like__arrow {
+                transform: translateX(3px);
+                svg {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}
+.tourPage__review__heading__link__text {
+    display: block;
+    margin-top: 4px;
+}
+.tourPage__review__heading__link__like {
+    width: 22px;
+    margin-right: 8px;
+    svg {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+.tourPage__review__heading__link__rating {
+    margin-right: 8px;
+}
+.tourPage__review__heading__link__like__arrow {
+    width: 5px;
+    margin-top: 6px;
+    margin-left: 3px;
+    transition: transform 0.2s ease;
+    position: relative;
+    svg {
+        display: block;
+        height: auto;
+        width: 100%;
+        fill: $black;
+        transition: fill 0.2s ease;
+    }
+}
+.tourPage__review__content {
+    margin-top: 23px;
 }

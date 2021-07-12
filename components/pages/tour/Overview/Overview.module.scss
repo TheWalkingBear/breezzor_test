@@ -1,0 +1,29 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.container {
+    margin-top: 45px;
+}
+.title {
+    font-weight: 400;
+    font-family: $font;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: $black;
+}
+.description {
+    font-weight: 400;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $gray;
+    margin-top: 27px;
+    p {
+        margin: 0;
+        & + p {
+            margin-top: 12px;
+        }
+    }
+}

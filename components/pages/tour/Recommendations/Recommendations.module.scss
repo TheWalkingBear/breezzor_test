@@ -1,0 +1,68 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.container {
+    overflow: hidden;
+    margin-top: 45px;
+    :global(.container) {
+        padding-top: 65px;
+        border-top: 1px solid #8C8C8C;
+    }
+}
+.title {
+    font-family: $font2;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: $black;
+    letter-spacing: 0.5px;
+}
+.description {
+    font-weight: 400;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $gray;
+    margin-top: 45px;
+    p {
+        margin: 0;
+        & + p {
+            margin-top: 12px;
+        }
+    }
+}
+.content__tabs {
+    margin-top: 42px;
+}
+.content__cards {
+    margin-top: 25px;
+    position: relative;
+    &:before {
+        display: block;
+        height: 100%;
+        width: 1500px;
+        background-color: $lightGray;
+        content: '';
+        margin-right: 12px;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        z-index: 5;
+    }
+    &:after {
+        display: block;
+        height: 100%;
+        width: 1500px;
+        background-color: $lightGray;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 5;
+    }
+    :global(.swiper-container) {
+        padding: 20px 0;
+        overflow: visible;
+    }
+}

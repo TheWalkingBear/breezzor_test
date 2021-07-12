@@ -1,0 +1,25 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.content {
+    display: flex;
+}
+.content__person {
+    margin-right: 20px;
+}
+.content__text {
+    font-weight: 400;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $gray;
+    flex: 1;
+    margin-top: 3px;
+    p {
+        margin: 0;
+        & + p {
+            margin-top: 24px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.content {
+    display: flex;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: center;
+    svg {
+        display: block;
+        height: auto;
+        width: 21px;
+        margin-right: 8px;
+    }
+}

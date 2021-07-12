@@ -3,7 +3,8 @@ import Link from "next/link";
 import cn from 'classnames';
 import s from './TourCard.module.scss';
 
-import { Bookmark, Location, Like } from '../Icons/Icons';
+import { Bookmark, Location } from '../Icons/Icons';
+import Rating from '../Rating/Rating';
 
 const TourCard = ({slug, name, image, short_description, cost, location, duration, rating, best_offer}) => {
     return (
@@ -11,9 +12,7 @@ const TourCard = ({slug, name, image, short_description, cost, location, duratio
             <div className={s.heading}>
                 {image !== null && <div className={s.heading__image}>
                     <Link href="/">
-                        <a>
-                            <img src={image} />
-                        </a>
+                        <a style={{backgroundImage: `url(${image})`}}></a>
                     </Link>
                 </div>}
                 {best_offer && <div className={s.tag}>
@@ -40,8 +39,7 @@ const TourCard = ({slug, name, image, short_description, cost, location, duratio
                         <span>{cost}</span>
                     </div>
                     <div className={s.description__details__rating}>
-                        <Like />
-                        <span>{rating}</span>
+                        <Rating count={rating} />
                     </div>
                 </div>
                 <div className={s.description__duration}>

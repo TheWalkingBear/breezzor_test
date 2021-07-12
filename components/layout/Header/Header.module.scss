@@ -29,6 +29,7 @@
     flex-direction: row;
     a {
         font-weight: 500;
+        font-family: $font;
         font-size: 14px;
         line-height: 21px;
         color: $white;
@@ -63,7 +64,4 @@
             transition: fill 0.2s ease;
         }
     }
-}
-.action {
-
 }

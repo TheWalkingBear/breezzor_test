@@ -7,12 +7,7 @@
 @import 'base/fonts.scss';
 
 body {
-    background-color: $lightGray;
-    font-family: $font;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $gray;
+    background-color: $lightGray!important;
     &.fixed {
         overflow: hidden;
     }

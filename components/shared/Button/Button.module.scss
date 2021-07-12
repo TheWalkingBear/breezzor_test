@@ -6,6 +6,7 @@
     height: 40px;
     background-color: transparent;
     font-weight: 500;
+    font-family: $font;
     font-size: 14px;
     line-height: 0;
     color: $white;
@@ -17,7 +18,19 @@
     border: 1px solid $white;
     border-radius: 8px;
     box-sizing: border-box;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    &.dark {
+        color: $black;
+        border-color: $black;
+        &:hover {
+            background-color: $blue;
+            color: $white;
+            border-color: $blue;
+        }
+    }
+    &.rounded {
+        border-radius: 24px;
+    }
     &:hover {
         background-color: $white;
         color: $blue;

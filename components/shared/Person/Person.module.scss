@@ -1,0 +1,38 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.person {
+    display: flex;
+    width: 265px;
+    flex-direction: row;
+}
+.person__photo {
+    height: 48px;
+    width: 48px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.person__about {
+    margin-top: 4px;
+}
+.person__about__name {
+    font-weight: 500;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+    letter-spacing: 0.2px;
+}
+.person__about__date {
+    font-weight: 400;
+    font-family: $font;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #8C8C8C;
+    margin-top: 3px;
+}

@@ -15,7 +15,8 @@ import Recommendations from '../../components/pages/tour/Recommendations/Recomme
 
 import s from './Home.module.scss';
 
-import { Like, ArrowRight } from '../../components/shared/Icons/Icons';
+import { ArrowRight } from '../../components/shared/Icons/Icons';
+import Rating from '../../components/shared/Rating/Rating';
 import data from '../../config/demo.json';
 
 const Home = (props) => {
@@ -29,26 +30,28 @@ const Home = (props) => {
                 <Info data={data.information} />
                 <Place data={data.place} />
                 <div className={s.tourPage__review}>
-                    <div className={s.tourPage__review__heading}>
-                        <div className={s.tourPage__review__heading__title}>
-                            <span>Отзывы:</span>
-                        </div> 
-                        <div className={s.tourPage__review__heading__link}>
-                            <Link href="/">
-                                <a>
-                                    <div className={s.tourPage__review__heading__link__like}>
-                                        <Like />
-                                    </div>
-                                    <span>Читать всё</span>
-                                    <div className={s.tourPage__review__heading__link__like__arrow}>
-                                        <ArrowRight />
-                                    </div>
-                                </a>
-                            </Link>
+                    <div className="container">
+                        <div className={s.tourPage__review__heading}>
+                            <div className={s.tourPage__review__heading__title}>
+                                <span>Отзывы:</span>
+                            </div> 
+                            <div className={s.tourPage__review__heading__link}>
+                                <Link href="/">
+                                    <a>
+                                        <div className={s.tourPage__review__heading__link__rating}>
+                                            <Rating count={4.5} />
+                                        </div>
+                                        <span className={s.tourPage__review__heading__link}>Читать всё</span>
+                                        <div className={s.tourPage__review__heading__link__like__arrow}>
+                                            <ArrowRight />
+                                        </div>
+                                    </a>
+                                </Link>
+                            </div>
                         </div>
-                    </div>
-                    <div className={s.tourPage__review__content}>
-                        <ReviewItem data={data.review} />
+                        <div className={s.tourPage__review__content}>
+                            <ReviewItem data={data.review} />
+                        </div>
                     </div>
                 </div>
                 <Event data={data.event} />
