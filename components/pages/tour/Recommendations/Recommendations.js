@@ -1,6 +1,4 @@
 import React, {useEffect, useState, useRef} from 'react';
-import Link from "next/link";
-import cn from 'classnames';
 import s from './Recommendations.module.scss';
 
 import Tabs from '../../../shared/Tabs/Tabs';
@@ -18,7 +16,7 @@ const Recommendations = ({data}) => {
 
     const [activeSlug, setActiveSlug] = useState(null);
 
-    const swiperRef = React.useRef(null);
+    const swiperRef = useRef(null);
 
     useEffect(() => {
         getTours(null);

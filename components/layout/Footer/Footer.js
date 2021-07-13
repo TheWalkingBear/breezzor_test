@@ -173,19 +173,25 @@ const Footer = () => {
                     <div className={s.bottom__social}>
                         <ul>
                             <li>
-                                <a href="/" target="_blank">
-                                    <Facebook />
-                                </a>
+                                <Link href="/">
+                                    <a>
+                                        <Facebook />
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/" target="_blank">
-                                    <Instagram />
-                                </a>
+                                <Link href="/">
+                                    <a>
+                                        <Instagram />
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/" target="_blank">
-                                    <Twitter />
-                                </a>
+                                <Link href="/">
+                                    <a>
+                                        <Twitter />
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

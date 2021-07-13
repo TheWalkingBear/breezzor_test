@@ -64,10 +64,12 @@ const Place = (props) => {
                                 <span>{find_us}</span>
                             </div>
                             <div className={s.content__info__item__link}>
-                                <a href="/" download>
-                                    <span>Скачать схему</span>
-                                    <ArrowRight />
-                                </a>
+                                <Link href="/">
+                                    <a download>
+                                        <span>Скачать схему</span>
+                                        <ArrowRight />
+                                    </a>
+                                </Link>
                             </div>
                         </div>}
                         {information && <div className={s.content__info__item}>

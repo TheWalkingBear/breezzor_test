@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Link from "next/link";
+import Image from 'next/image'
 import cn from 'classnames';
 import s from './Event.module.scss';
 
@@ -20,9 +20,7 @@ const Event = ({data}) => {
                                 <span>– 30 OFF</span>
                             </div>
                         </div>
-                        <div className={s.content__image__content}>
-                            <img src={image} />
-                        </div>
+                        <div className={s.content__image__content} dangerouslySetInnerHTML={{ __html: image}}></div>
                     </div>}
                     <div className={s.content__about}>
                         <div className={s.content__about__title}>
