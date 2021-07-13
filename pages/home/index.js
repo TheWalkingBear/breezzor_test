@@ -24,10 +24,16 @@ const Home = (props) => {
         <Layout {...props} title="Breezzor" googleMaps>
             <div className={s.tourPage}>
                 <PageHeading data={data} />
-                <Gallery data={data.gallery} />
-                <Overview data={data.overview} />
-                <Organizer data={data.organizer} />
-                <Info data={data.information} />
+                <div id="overview" className="section">
+                    <Gallery data={data.gallery} />
+                    <Overview data={data.overview} />
+                </div>
+                <div id="organizer" className="section">
+                    <Organizer data={data.organizer} />
+                </div>
+                <div id="information" className="section">
+                    <Info data={data.information} />
+                </div>
                 <Place data={data.place} />
                 <div className={s.tourPage__review}>
                     <div className="container">
@@ -54,7 +60,9 @@ const Home = (props) => {
                         </div>
                     </div>
                 </div>
-                <Event data={data.event} />
+                <div id="dates" className="section">
+                    <Event data={data.event} />
+                </div>
                 <Recommendations data={data.recommendations} />
             </div>
         </Layout>

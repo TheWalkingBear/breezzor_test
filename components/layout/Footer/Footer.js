@@ -184,7 +184,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a href="/" target="_blank">
-                                    <Facebook />
+                                    <Twitter />
                                 </a>
                             </li>
                         </ul>
